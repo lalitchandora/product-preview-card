@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer-div {
+    background: hsl(30, 38%, 92%);
+    padding: 155px 0;
+}
+
+.prod-preview {
+    max-width: 500px;
+    margin: auto;
+    background: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+}
+
+.prod-image {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.prod-details {
+    padding: 30px;
+}
+
+.prod-type {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.prod-name {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.prod-price {
+    display: inline;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+strike {
+    font-family: "Montserrat";
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+
+    align-items: center;
+    justify-content: center;
+    column-gap: 13px;
+}
+
+button:hover {
+    background: hsl(159, 40%, 22%);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .prod-preview {
+        max-width: 600px;
+        margin: auto;
+        background: hsl(0, 0%, 100%);
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+    }
+}
