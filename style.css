@@ -12,7 +12,7 @@
 }
 
 .prod-preview {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     background: hsl(0, 0%, 100%);
     display: grid;
